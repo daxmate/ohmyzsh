@@ -1,14 +1,15 @@
 alias rmfr="rm -fr"
+alias rmrf="rm -rf"
 
 # home brew alias
-alias br=brew
-alias brins="brew install"
-alias brdoc="brew doctor"
-alias bruin="brew uninstall"
-alias brinf="brew info"
-alias brsch="brew search"
-alias brout="brew outdated"
-alias brupg="brew upgrade"
-alias brupd="brew update"
-alias brlst="brew list"
-alias brlnk="brew link"
+alias b=brew
+alias bd="brew doctor"
+alias bi="brew info"
+alias bin="brew install"
+alias bk="brew link"
+alias bl="brew list"
+alias bo="brew outdated"
+alias bs="brew search"
+alias bun="brew uninstall"
+alias bud="brew update"
+alias bug="brew upgrade"
