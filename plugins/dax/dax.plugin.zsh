@@ -1,0 +1,1 @@
+alias rmfr="rm -fr"
