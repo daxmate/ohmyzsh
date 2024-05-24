@@ -6,6 +6,7 @@ alias b=brew
 alias bd="brew doctor"
 alias bi="brew info"
 alias bin="brew install"
+alias bink="brew install --cask"
 alias bk="brew link"
 alias bl="brew list"
 alias bo="brew outdated"
