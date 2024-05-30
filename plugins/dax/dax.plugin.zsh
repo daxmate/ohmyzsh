@@ -26,3 +26,7 @@ alias ed="nvim '/Users/dax/dotfiles/ohmyzsh/custom/plugins/dax/dax.plugin.zsh'"
 # zshrc
 alias ez="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
+
+# git
+alias gpac="echo 'git push' > .git/hooks/post-commit & chmod +x .git/hooks/post-commit"
+alias gin="git init"
