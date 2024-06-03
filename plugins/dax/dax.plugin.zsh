@@ -30,3 +30,12 @@ alias sz="source ~/.zshrc"
 # git
 alias gpac="echo 'git push' > .git/hooks/post-commit & chmod +x .git/hooks/post-commit"
 alias gin="git init"
+
+# forgit
+export FORGIT_FZF_DEFAULT_OPTS="
+--exact
+--border
+--cycle
+--reverse
+--height '80%'
+"
