@@ -29,7 +29,16 @@ alias sz="source ~/.zshrc"
 
 # git
 alias gpac="echo 'git push' > .git/hooks/post-commit & chmod +x .git/hooks/post-commit"
-alias gin="git init"
+alias ginit="git init && _git_auto_commit"
+function _git_auto_commit(){
+	if [[ -d .git ]]; then
+		echo 'git push' >> .git/hooks/post-commit
+		chmod +x .git/hooks/post-commit
+		echo 'added git hooks for post-commit'
+	else
+		echo 'not a git repository'
+	fi
+}
 
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS="
