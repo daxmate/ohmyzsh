@@ -48,3 +48,6 @@ export FORGIT_FZF_DEFAULT_OPTS="
 --reverse
 --height '80%'
 "
+
+# vim
+alias dvim="nvim -c 'set background=dark'"
