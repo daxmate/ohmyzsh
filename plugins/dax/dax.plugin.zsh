@@ -39,6 +39,7 @@ function _git_auto_commit(){
 		echo 'not a git repository'
 	fi
 }
+alias gswr="gsw review"
 
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS="
