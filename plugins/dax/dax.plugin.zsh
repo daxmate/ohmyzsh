@@ -52,3 +52,13 @@ export FORGIT_FZF_DEFAULT_OPTS="
 
 # vim
 alias dvim="nvim -c 'set background=dark'"
+
+# tmux
+# 检查是否有 tmux 会话
+if ! tmux list-sessions 2>/dev/null | grep -q .; then
+  # 如果没有任何 tmux 会话，启动新的 tmux 会话
+  tmux new-session -d -s default
+else
+  # 如果有 tmux 会话，附加到第一个会话
+  tmux attach-session -t default
+fi
