@@ -62,6 +62,15 @@ function _git_auto_commit(){
 }
 alias gswr="gsw review"
 alias grro="git remote remove origin"
+function grao() {
+    local repo_name=$1
+    if [ -z "$repo_name" ]; then
+        echo "Usage: grao <repository-name>"
+        return 1
+    fi
+    git remote add origin git@github.com:daxmate/$repo_name
+    echo "Remote 'origin' added for repository '$repo_name'"
+}
 
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS="
