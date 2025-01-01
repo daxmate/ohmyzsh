@@ -61,6 +61,7 @@ function _git_auto_commit(){
 	fi
 }
 alias gswr="gsw review"
+alias grro="git remote remove origin"
 
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS="
