@@ -1,5 +1,26 @@
 alias rmfr="rm -fr"
 alias rmrf="rm -rf"
+alias pip=pip3
+alias ui2py="python3 ui2py.py"
+alias subrename="python3 ~/dotfiles/subrename.py"
+alias py=python3
+alias python=python3
+alias vim=nvim
+alias vi=nvim
+alias buildnhk=~/dotfiles/buildnhk.sh
+alias dsq='ssh dax@192.168.31.24 -t "export PATH=/opt/bin:/opt/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin && /opt/bin/zsh -l"'
+alias lwarp="lwarpmk print && lwarpmk html && lwarpmk limages"
+alias rnm='python3 ~/dotfiles/myrename.py'
+alias pyin='pip install'
+alias ytd='yt-dlp -N 5'
+export LC_ALL=zh_CN.UTF-8
+alias ls=eza
+alias bat="bat --theme 'Monokai Extended Light'"
+if alias run-help >/dev/null 2>&1; then
+  unalias run-help
+fi
+autoload run-help
+alias help=run-help
 
 # home brew alias
 alias b=brew
