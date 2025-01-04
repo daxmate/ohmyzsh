@@ -12,7 +12,7 @@ alias dsq='ssh dax@192.168.31.24 -t "export PATH=/opt/bin:/opt/sbin:/usr/bin:/bi
 alias lwarp="lwarpmk print && lwarpmk html && lwarpmk limages"
 alias rnm='python3 ~/dotfiles/myrename.py'
 alias pyin='pip install'
-alias ytd='yt-dlp -N 5'
+alias ytd='yt-dlp --cookies-from-brow Vivaldi -N 5'
 export LC_ALL=zh_CN.UTF-8
 alias ls=eza
 alias bat="bat --theme 'Monokai Extended Light'"
@@ -85,12 +85,13 @@ export FORGIT_FZF_DEFAULT_OPTS="
 alias dvim="nvim -c 'set background=dark'"
 
 # tmux
-# 检查是否有 tmux 会话
-if ! tmux list-sessions 2>/dev/null | grep -q .; then
-  # 如果没有任何 tmux 会话，启动新的 tmux 会话
-  tmux new-session -d -s default
-  tmux attach-session -t default
-else
-  # 如果有 tmux 会话，附加到第一个会话
+# 检查是否已经在一个 tmux 会话中
+if [[ -z "$TMUX" ]]; then
+  # 如果没有在 tmux 会话中，检查是否有其他会话
+  if ! tmux list-sessions 2>/dev/null | grep -q .; then
+    # 如果没有任何 tmux 会话，启动新的 tmux 会话
+    tmux new-session -d -s default
+  fi
+  # 无论如何都附加到 tmux 会话（包括新会话或已有会话）
   tmux attach-session -t default
 fi
