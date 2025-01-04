@@ -9,6 +9,7 @@ alias vim=nvim
 alias vi=nvim
 alias buildnhk=~/dotfiles/buildnhk.sh
 alias dsq='ssh dax@192.168.31.24 -t "export PATH=/opt/bin:/opt/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin && /opt/bin/zsh -l"'
+alias gjy='ssh gaojianying@192.168.31.113'
 alias lwarp="lwarpmk print && lwarpmk html && lwarpmk limages"
 alias rnm='python3 ~/dotfiles/myrename.py'
 alias pyin='pip install'
