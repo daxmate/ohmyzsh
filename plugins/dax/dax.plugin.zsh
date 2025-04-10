@@ -49,6 +49,11 @@ alias ed="nvim '/Users/dax/dotfiles/ohmyzsh/custom/plugins/dax/dax.plugin.zsh'"
 alias ez="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 
+# mactex
+# alias sudo='sudo '
+alias tup="sudo tlmgr update --self | sudo tlmgr update --all"
+alias tfont="sudo tlmgr conf texmf OSFONTDIR /System/Library/AssetsV2/com_apple_MobileAsset_Font7"
+
 # git
 alias gpac="echo 'git push' > .git/hooks/post-commit & chmod +x .git/hooks/post-commit"
 alias ginit="git init && _git_auto_commit"
