@@ -13,7 +13,7 @@ alias gjy='ssh gjy@192.168.31.113'
 alias lwarp="lwarpmk print && lwarpmk html && lwarpmk limages"
 alias rnm='python3 ~/dotfiles/myrename.py'
 alias pyin='pip install'
-alias ytd='yt-dlp --cookies-from-brow Vivaldi -N 5'
+alias ytd='yt-dlp --cookies-from-browswer Vivaldi -N 5'
 export LC_ALL=zh_CN.UTF-8
 alias ls=eza
 alias bat="bat --theme 'Monokai Extended Light'"
@@ -22,6 +22,7 @@ if alias run-help >/dev/null 2>&1; then
 fi
 autoload run-help
 alias help=run-help
+alias ytdann='yt-dlp --cookies-from-browser Vivaldi -N 5 -f 137+140'
 
 # home brew alias
 alias b=brew
