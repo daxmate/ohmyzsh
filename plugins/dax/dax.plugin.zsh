@@ -68,6 +68,8 @@ function _git_auto_commit(){
 	fi
 }
 alias gswr="gsw review"
+alias gswo="git switch --orphan"
+alias gcoo="git checkout --orphan"
 alias grro="git remote remove origin"
 function grao() {
     local repo_name=$1
