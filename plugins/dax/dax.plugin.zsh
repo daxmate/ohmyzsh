@@ -93,12 +93,12 @@ alias dvim="nvim -c 'set background=dark'"
 
 # tmux
 # 检查是否已经在一个 tmux 会话中
-if [[ -z "$TMUX" ]]; then
+# if [[ -z "$TMUX" ]]; then
   # 如果没有在 tmux 会话中，检查是否有其他会话
-  if ! tmux list-sessions 2>/dev/null | grep -q .; then
+  # if ! tmux list-sessions 2>/dev/null | grep -q .; then
     # 如果没有任何 tmux 会话，启动新的 tmux 会话
-    tmux new-session -d -s default
-  fi
+    # tmux new-session -d -s default
+  # fi
   # 无论如何都附加到 tmux 会话（包括新会话或已有会话）
-  tmux attach-session -t default
-fi
+  # tmux attach-session -t default
+# fi
