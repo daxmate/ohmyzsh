@@ -49,6 +49,8 @@ alias ed="nvim '/Users/dax/dotfiles/ohmyzsh/custom/plugins/dax/dax.plugin.zsh'"
 # zshrc
 alias ez="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
+alias edax="vim /Users/dax/.oh-my-zsh/custom/plugins/dax/dax.plugin.zsh"
+alias pipup="pip install --upgrade pip"
 
 # mactex
 # alias sudo='sudo '
