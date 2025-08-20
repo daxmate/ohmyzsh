@@ -2,3 +2,4 @@ example.zsh
 plugins/example/
 themes/example.zsh-theme
 .DS_Store
+tinted-fzf

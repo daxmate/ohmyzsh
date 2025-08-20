@@ -91,7 +91,7 @@ export FORGIT_FZF_DEFAULT_OPTS="
 --reverse
 --height '80%'
 "
-
+source /Users/dax/.oh-my-zsh/custom/plugins/dax/base24-one-black.sh
 # vim
 alias dvim="nvim -c 'set background=dark'"
 
