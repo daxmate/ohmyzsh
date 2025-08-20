@@ -82,6 +82,7 @@ function grao() {
     git remote add origin git@github.com:daxmate/$repo_name
     echo "Remote 'origin' added for repository '$repo_name'"
 }
+export FORGIT_DIFF_FZF_OPTS="--ansi"
 
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS="
@@ -90,8 +91,9 @@ export FORGIT_FZF_DEFAULT_OPTS="
 --cycle
 --reverse
 --height '80%'
+--color
 "
-source /Users/dax/.oh-my-zsh/custom/plugins/dax/base24-one-black.sh
+# source /Users/dax/.oh-my-zsh/custom/plugins/dax/base24-one-black.sh
 # vim
 alias dvim="nvim -c 'set background=dark'"
 
