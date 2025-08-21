@@ -26,6 +26,7 @@ alias ytdann='yt-dlp --cookies-from-browser Vivaldi -N 5 -f 137+140'
 
 # home brew alias
 alias b=brew
+alias bcl="brew cleanup"
 alias bd="brew doctor"
 alias bi="brew info"
 alias bin="brew install"
