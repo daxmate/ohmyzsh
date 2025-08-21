@@ -60,27 +60,27 @@ alias tfont="sudo tlmgr conf texmf OSFONTDIR /System/Library/AssetsV2/com_apple_
 # git
 alias gpac="echo 'git push' > .git/hooks/post-commit & chmod +x .git/hooks/post-commit"
 alias ginit="git init && _git_auto_commit"
-function _git_auto_commit(){
-	if [[ -d .git ]]; then
-		echo 'git push' >> .git/hooks/post-commit
-		chmod +x .git/hooks/post-commit
-		echo 'added git hooks for post-commit'
-	else
-		echo 'not a git repository'
-	fi
+function _git_auto_commit() {
+  if [[ -d .git ]]; then
+    echo 'git push' >>.git/hooks/post-commit
+    chmod +x .git/hooks/post-commit
+    echo 'added git hooks for post-commit'
+  else
+    echo 'not a git repository'
+  fi
 }
 alias gswr="gsw review"
 alias gswo="git switch --orphan"
 alias gcoo="git checkout --orphan"
 alias grro="git remote remove origin"
 function grao() {
-    local repo_name=$1
-    if [ -z "$repo_name" ]; then
-        echo "Usage: grao <repository-name>"
-        return 1
-    fi
-    git remote add origin git@github.com:daxmate/$repo_name
-    echo "Remote 'origin' added for repository '$repo_name'"
+  local repo_name=$1
+  if [ -z "$repo_name" ]; then
+    echo "Usage: grao <repository-name>"
+    return 1
+  fi
+  git remote add origin git@github.com:daxmate/$repo_name
+  echo "Remote 'origin' added for repository '$repo_name'"
 }
 
 # forgit
@@ -94,15 +94,3 @@ export FORGIT_FZF_DEFAULT_OPTS="
 "
 # vim
 alias dvim="nvim -c 'set background=dark'"
-
-# tmux
-# 检查是否已经在一个 tmux 会话中
-# if [[ -z "$TMUX" ]]; then
-  # 如果没有在 tmux 会话中，检查是否有其他会话
-  # if ! tmux list-sessions 2>/dev/null | grep -q .; then
-    # 如果没有任何 tmux 会话，启动新的 tmux 会话
-    # tmux new-session -d -s default
-  # fi
-  # 无论如何都附加到 tmux 会话（包括新会话或已有会话）
-  # tmux attach-session -t default
-# fi
