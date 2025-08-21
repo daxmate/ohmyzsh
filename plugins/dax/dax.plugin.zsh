@@ -44,7 +44,6 @@ alias bug="brew upgrade"
 alias eu="nvim ~/Library/Rime/wubi86_user.dict.yaml"
 alias ep="nvim ~/Library/Application\ Support/V2RayX/pac/pac.js"
 alias eu="nvim ~/Library/Rime/wubi86_user.dict.yaml"
-alias ed="nvim '/Users/dax/.oh-my-zsh/custom/plugins/dax/dax.plugin.zsh'"
 
 # zshrc
 alias ez="vim ~/.zshrc"
