@@ -14,6 +14,7 @@ alias lwarp="lwarpmk print && lwarpmk html && lwarpmk limages"
 alias rnm='python3 ~/dotfiles/myrename.py'
 alias pyin='pip install'
 alias ytd='yt-dlp --cookies-from-browser Vivaldi -N 5'
+alias ytdproxy='yt-dlp --proxy http://127.0.0.1:1081 --cookies-from-browser Vivaldi -N 5'
 export LC_ALL=zh_CN.UTF-8
 alias ls=eza
 alias bat="bat --theme 'Monokai Extended Light'"
